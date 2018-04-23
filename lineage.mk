@@ -8,6 +8,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Vendor blobs
 $(call inherit-product-if-exists, vendor/essential/mata/mata-vendor.mk)
 
+# Include Gapps
+$(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
+
 # Device
 $(call inherit-product, device/essential/mata/device.mk)
 
