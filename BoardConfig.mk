@@ -179,9 +179,7 @@ TARGET_RECOVERY_UI_MARGIN_WIDTH := 64
 BOARD_ROOT_EXTRA_FOLDERS := bt_firmware dsp firmware persist
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 # Timeservice
 BOARD_USES_QC_TIME_SERVICES := true
