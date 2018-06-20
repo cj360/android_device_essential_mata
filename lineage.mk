@@ -14,6 +14,8 @@ $(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
 # Device
 $(call inherit-product, device/essential/mata/device.mk)
 
+include device/qcom/common/common.mk
+
 # TWRP
 ifeq ($(WITH_TWRP),true)
 $(call inherit-product, device/essential/mata/twrp/twrp.mk)
