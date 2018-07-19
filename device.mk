@@ -151,7 +151,6 @@ PRODUCT_PACKAGES += \
     liboverlay \
     libqdMetaData.system \
     libtinyxml \
-    libvulkan \
     memtrack.msm8998
 
 # DRM
@@ -410,11 +409,7 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.1-service.mata
 
 # VNDK
-# Update this list with what each blob is actually for
-# libicuuc: vendor.qti.hardware.qteeconnector@1.0-impl
-PRODUCT_PACKAGES += \
-    libicuuc.vendor \
-    vndk_package
+PRODUCT_PACKAGES += vndk-sp
 
 # Weaver
 PRODUCT_PACKAGES += \
